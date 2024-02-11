@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelector("form").onsubmit = function () {
+        let username = document.querySelector("#username").value;
+        let password = document.querySelector("#password").value;
+
+        let checkusername = false;
+        let checkpassword = false;
+
+        
+        if (username.length < 8) {
+          document.querySelector("#errorUsername").innerHTML =
+            "Username ต้องมีความยาวอย่างน้อย 8 ตัวอักษร";
+          return false;
+        } else {
+          document.querySelector("#errorUsername").innerHTML = "";
+          checkusername = true;
+        }
+        if (password.length < 8) {
+          document.querySelector("#errorPassword").innerHTML =
+            "Password ต้องมีความยาวอย่างน้อย 8 ตัวอักษร";
+          return false;
+        } else {
+          // ล้างข้อความ error
+          document.querySelector("#errorPassword").innerHTML = "";
+          checkpassword = true;
+        }
+        if (checkusername && checkpassword) {
+          return true; 
+        } else {
+          return false; 
+        }
+      };
+    });
+  </script>
+  <style>
+    body {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .login {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        border: 3px solid darkblue;
+        padding: 30px;
+        margin: auto;
+        width: 300px;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+ <div class="login">
+     <h1>LOG IN</h1>
+     <form action="">
+        <p>Username :</p>
+        <input type="text" id="username" />
+        <p id="errorUsername" class="error"></p>
+        <p>Password :</p>
+        <input type="password" id="password" />
+        <p id="errorPassword" class="error"></p>
+        <input type="submit" value="Log In" />
+       </form>
+ </div>
+</body>
+</html>
