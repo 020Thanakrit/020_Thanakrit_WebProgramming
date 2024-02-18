@@ -1,19 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Thanakrit Khankhiri 6540011020</h1>
-    <h2>exercise</h2>
-    <ul>
-        <li><a href="https://020Thanakrit.github.io/020_Thanakrit_WebProgramming/week1/index.html">week1</a> - How Websites Work</li>
-        <li><a href="https://020Thanakrit.github.io/020_Thanakrit_WebProgramming/week2/padthaiv2.html">week2</a> - Basic HTML</li>
-        <li><a href="https://020Thanakrit.github.io/020_Thanakrit_WebProgramming/week3/form.html">week3</a> - Form</li>
-        <li><a href="https://020Thanakrit.github.io/020_Thanakrit_WebProgramming/week4/portfolio.html">week4</a> - portfolio</li>
-        <li><a href="https://020Thanakrit.github.io/020_Thanakrit_WebProgramming/week5/login.html">week5</a> - login</li>
-    </ul>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thanakrit Khankhiri 6540011020</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body{
+          background-color: #7854A2;  
+        }
+        .hightlighttext{
+          color: aliceblue;
+          text-shadow: 2px 2px #7854A2;
+          font-size: 22px;
+          font-weight: bold;
+        }
+        .hightlighttext3{
+          color: aliceblue;
+          font-size: 22px;
+          font-weight: bold;
+        }
+        .hightlighttext2{
+          color: aliceblue;
+          font-size: 20px;
+          font-weight: bold;
+        }
+       .navbg{
+        background-color: #E76F99;
+       }
+       .topic{
+        justify-content: center;
+        text-align: center;
+        border: 3px solid;
+        border-radius: 30px;
+        background-color: #E76F99;
+        padding: 10px 50px 10px 50px;
+        margin: auto;
+       }
+       .container{
+        display: flex;
+       }
+       .imgsize{
+         max-width: 100%;
+         border: 3px solid #7854A2;
+         border-radius: 30px;
+         max-height: 100%;
+         margin: 20px;
+       }
+       .main{
+        border: 3px solid ;
+        border-radius: 30px;
+        background-color: #E76F99;
+        padding: 10px 50px 10px 50px;
+        margin: auto;
+       }
+       .work{
+        justify-content: center;
+        text-align: center;
+        border: 3px solid ;
+        border-radius: 30px;
+        background-color: #ffffff;
+        border: 3px solid #7854A2;
+        padding: 5px;
+        max-width: 600px;
+        }
+        .workimg{
+         max-width: 80%;
+         border: 3px solid #7854A2;
+         border-radius: 30px;
+         max-height: 100%;
+         margin: 10px;
+        }
+        .workmain{
+        border: 3px solid ;
+        border-radius: 30px;
+        background-color: #E76F99;
+        padding: 10px;
+        margin: auto;
+       }
+       .footer{
+        background-color: #E76F99;
+        border: 3px solid;
+       }
+       .justify-content{
+        justify-content: center;
+        text-align: center;
+       }
+       .buttom_size{
+        max-width: 60px;
+       }
+       #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+            cursor: pointer;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 360px;
+            opacity: 0.5;
+            transition: 0.3s;
+        }
+        
+    </style>
+  </head>
+  <body>
+   <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbg">
+        <div class="container-fluid">
+             <a class="navbar-brand hightlighttext" href="#">Thanakrit Khankhiri</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link hightlighttext" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hightlighttext" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hightlighttext" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+   <!-- navbar -->   
+
+
+   <!-- about --> 
+   <div class="container" id="about">
+           <div class="topic  mt-5 ">
+               <h1 class="hightlighttext">
+                ABOUT ME
+                </h1>
+           </div>  
+   </div>
+   <div class="main mt-5 mx-5">
+      <div class="row">
+        <div class="col-lg-6 mt-10 col-sm-12 hightlighttext">
+        <h1>I'm Thanakrite khankhiri</h1>
+        <h1>6540011020</h1>
+        <h2 class="hightlighttext2">
+           This website showcases the coursework of Thanakrit Khunkhiri, student ID 65400110120, in the course 934-206 Web Programming at the Prince of Songkla University, Surat Thani Campus. The student is majoring in Information Technology
+        </h2>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <img class="imgsize" src="image/portimg.jpg" alt="">
+        </div>
+       </div>
+    </div>
+    <!-- about --> 
+
+    <!-- work -->
+    <div class="container mt-5" id="work">
+        <div class="topic  mt-3 ">
+            <h1 class="hightlighttext">
+             coursework
+             </h1>
+        </div>  
+    </div>
+    <div class="workmain  mx-5 mt-5">
+      <div class="row mx-5 ">
+           <div class="col-lg-6 col-sm-12 hightlighttext3 work mt-5 mx-3">
+            <img class="workimg" src="image/w1r.png" alt="">
+              <a href="https://020Thanakrit.github.io/020_Thanakrit_WebProgramming/week1/index.html">corsework 1 : How Websites Work</a>
+           </div>
+           <div class="col-lg-6 col-sm-12 hightlighttext3 work mt-5 mx-3">
+            <img class="workimg" src="image/w2r.png" alt="">
+              <a href="https://020Thanakrit.github.io/020_Thanakrit_WebProgramming/week2/padthaiv2.html">corsework 2 : Basic HTML</a>
+           </div>
+           <div class="col-lg-6 col-sm-12 hightlighttext3 work mt-5 mx-3">
+            <img class="workimg" src="image/w3r.png" alt="">
+              <a href="https://020Thanakrit.github.io/020_Thanakrit_WebProgramming/week3/form.html">corsework 3 : Form</a>
+           </div>
+           <div class="col-lg-6 col-sm-12 hightlighttext3 work mt-5 mx-3">
+            <img class="workimg" src="image/w4r.png" alt="">
+              <a href="https://020Thanakrit.github.io/020_Thanakrit_WebProgramming/week4/portfolio.html">corsework 4 : Portfolio</a>
+           </div>
+           <div class="col-lg-6 col-sm-12 hightlighttext3 work mt-5 mb-5 mx-3">
+            <img class="workimg" src="image/w5r.png" alt="">
+              <a href="https://020Thanakrit.github.io/020_Thanakrit_WebProgramming/week5/login.html">corsework 5 : Log in</a>
+           </div>
+        </div>
+    </div>
+    <!-- work -->
+    <button id="back-to-top">
+        ^
+    </button>
+    <!-- footer -->
+    <div class="container-fluid mt-5 footer" id="contact">
+        <div class="row ">
+          <div class="col-lg-1 col-sm--0">
+          </div>
+          <div class="col-lg-1 col-sm-12 mt-3 mb-3">
+            <h1 class="hightlighttext justify-content">Contact</h1>
+          </div>
+          <div class="col-lg-3 col-sm-12 mt-3 mb-3">
+            <div >
+                <h2  class="hightlighttext2">
+                  Email : 6540011020@psu.ac.th
+                </h2>
+              </div>
+              <div >
+                <h2  class="hightlighttext2">
+                  Tel : 064-412-0901
+                </h2>
+              </div>
+              <div >
+                <h2  class="hightlighttext2">
+                  facebook : ธนกฤต ขวัญคีรี
+                </h2>
+              </div>
+            </div>  
+            </div>  
+            </div>   
+          </div>
+        
+    <!-- footer -->    
+    <script>
+         const backToTopButton = document.getElementById("back-to-top");
+         backToTopButton.addEventListener("click", () => {
+           window.scrollTo({
+           top: 0,
+           behavior: "smooth",
+          });
+           });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
